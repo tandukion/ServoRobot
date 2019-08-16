@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+
+<robot name="servorobotarm" xmlns:xacro="http://ros.org/wiki/xacro">
+	<xacro:include filename="$(find servorobot_support)/urdf/servorobotarm_macro.xacro" />
+	<xacro:servorobotarm prefix=""/>
+</robot>
