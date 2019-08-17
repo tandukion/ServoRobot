@@ -121,14 +121,14 @@
     <joint name="${prefix}joint_1" type="revolute">
         <parent link="${prefix}base_link"/>
         <child link="${prefix}link_1"/>
-        <origin xyz="0.105 0 0.955" rpy="0 0 0"/>
+        <origin xyz="0.0 0 0.96" rpy="0 0 0"/>
         <axis xyz="0 0 1"/>
         <limit lower="-3.1415" upper="3.1415" effort="0" velocity="2.9671"/>
     </joint>
     <joint name="${prefix}joint_2" type="revolute">
       <parent link="${prefix}link_1"/>
       <child link="${prefix}link_2"/>
-      <origin xyz="-0.1 0 0.13" rpy="0 0 0"/>
+      <origin xyz="0 0 0.13" rpy="0 0 0"/>
       <axis xyz="0 1 0"/>
       <limit lower="-1.5707" upper="2.7052" effort="0" velocity="2.4434"/>
     </joint>
@@ -165,7 +165,7 @@
     <!-- ROS base_link to Robot Manufacturer World Coordinates transform -->
     <link name="${prefix}base" />
     <joint name="${prefix}base_link-base" type="fixed">
-        <origin xyz="0.105 0 0.955" rpy="0 0 0"/>
+        <origin xyz="0.0 0 0.96" rpy="0 0 0"/>
         <parent link="${prefix}base_link"/>
         <child link="${prefix}base"/>
     </joint>
