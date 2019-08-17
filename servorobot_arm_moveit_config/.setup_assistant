@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: servorobot_support
+    relative_path: urdf/servorobotarm.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/servorobotarm.srdf
+  CONFIG:
+    author_name: Dwindra Sulistyoutomo
+    author_email: tandukion@hotmail.com
+    generated_timestamp: 1566041806
