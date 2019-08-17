@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="ip_str" value="127.0.0.1" />
+
+  <group ns="load_servorobotarm">
+	  <include file="$(find servorobot_support)/launch/load_servorobotarm.launch"/>
+  </group>
+
+  <group ns="test_servorobotarm">
+	  <include file="$(find servorobot_support)/launch/test_servorobotarm.launch"/>
+  </group>
+
+  <group ns="robot_interface_streaming_servorobotarm">
+    <group ns="yrc1000" >
+	    <include file="$(servorobot_support)/launch/robot_interface_streaming_servorobotarm.launch">
+		    <arg name="robot_ip"   value="$(arg ip_str)" />
+	    </include>
+    </group>
+  </group>
+
+  <group ns="robot_state_visualize_servorobotarm">
+    <group ns="yrc1000" >
+	    <include file="$(find servorobot_support)/launch/robot_state_visualize_servorobotarm.launch">
+		    <arg name="robot_ip"   value="$(arg ip_str)" />
+	    </include>
+    </group>
+  </group>
+
+</launch>

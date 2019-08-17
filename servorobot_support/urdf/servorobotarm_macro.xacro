@@ -13,91 +13,105 @@
     <link name="${prefix}base_link">
         <visual>
             <geometry>
-                <mesh filename="package://servorobot_support/meshes/servorobot_arm/visual/servorobotarm_base.stl"/>
+                <mesh filename="package://servorobot_support/meshes/servorobot_arm/visual/servorobotarm_base.stl"
+                  scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="servo_slategrey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://servorobot_support/meshes/servorobot_arm/collision/servorobotarm_base.stl"/>
+                <mesh filename="package://servorobot_support/meshes/servorobot_arm/collision/servorobotarm_base.stl"
+                  scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
     </link>
     <link name="${prefix}link_1">
         <visual>
             <geometry>
-                <mesh filename="package://servorobot_support/meshes/servorobot_arm/visual/servorobotarm_link_1.stl"/>
+                <mesh filename="package://servorobot_support/meshes/servorobot_arm/visual/servorobotarm_link_1.stl"
+                  scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="servo_slategrey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://servorobot_support/meshes/servorobot_arm/collision/servorobotarm_link_1.stl"/>
+                <mesh filename="package://servorobot_support/meshes/servorobot_arm/collision/servorobotarm_link_1.stl"
+                  scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
     </link>
     <link name="${prefix}link_2">
         <visual>
             <geometry>
-                <mesh filename="package://servorobot_support/meshes/servorobot_arm/visual/servorobotarm_link_2.stl"/>
+                <mesh filename="package://servorobot_support/meshes/servorobot_arm/visual/servorobotarm_link_2.stl"
+                  scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="servo_slategrey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://servorobot_support/meshes/servorobot_arm/collision/servorobotarm_link_2.stl"/>
+                <mesh filename="package://servorobot_support/meshes/servorobot_arm/collision/servorobotarm_link_2.stl"
+                  scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
     </link>
     <link name="${prefix}link_3">
         <visual>
             <geometry>
-                <mesh filename="package://servorobot_support/meshes/servorobot_arm/visual/servorobotarm_link_3.stl"/>
+                <mesh filename="package://servorobot_support/meshes/servorobot_arm/visual/servorobotarm_link_3.stl"
+                  scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="servo_slategrey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://servorobot_support/meshes/servorobot_arm/collision/servorobotarm_link_3.stl"/>
+                <mesh filename="package://servorobot_support/meshes/servorobot_arm/collision/servorobotarm_link_3.stl"
+                  scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
     </link>
     <link name="${prefix}link_4">
         <visual>
             <geometry>
-                <mesh filename="package://servorobot_support/meshes/servorobot_arm/visual/servorobotarm_link_4.stl"/>
+                <mesh filename="package://servorobot_support/meshes/servorobot_arm/visual/servorobotarm_link_4.stl"
+                  scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="servo_slategrey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://servorobot_support/meshes/servorobot_arm/collision/servorobotarm_link_4.stl"/>
+                <mesh filename="package://servorobot_support/meshes/servorobot_arm/collision/servorobotarm_link_4.stl"
+                  scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
     </link>
     <link name="${prefix}link_5">
         <visual>
             <geometry>
-                <mesh filename="package://servorobot_support/meshes/servorobot_arm/visual/servorobotarm_link_5.stl"/>
+                <mesh filename="package://servorobot_support/meshes/servorobot_arm/visual/servorobotarm_link_5.stl"
+                  scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="servo_slategrey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://servorobot_support/meshes/servorobot_arm/collision/servorobotarm_link_5.stl"/>
+                <mesh filename="package://servorobot_support/meshes/servorobot_arm/collision/servorobotarm_link_5.stl"
+                  scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
     </link>
     <link name="${prefix}link_6">
         <visual>
             <geometry>
-                <mesh filename="package://servorobot_support/meshes/servorobot_arm/visual/servorobotarm_link_6.stl"/>
+                <mesh filename="package://servorobot_support/meshes/servorobot_arm/visual/servorobotarm_link_6.stl"
+                  scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="servo_slategrey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://servorobot_support/meshes/servorobot_arm/collision/servorobotarm_link_6.stl"/>
+                <mesh filename="package://servorobot_support/meshes/servorobot_arm/collision/servorobotarm_link_6.stl"
+                  scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
     </link>
@@ -107,42 +121,42 @@
     <joint name="${prefix}joint_1" type="revolute">
         <parent link="${prefix}base_link"/>
         <child link="${prefix}link_1"/>
-        <origin xyz="0 0 0.450" rpy="0 0 0"/>
+        <origin xyz="0.105 0 0.955" rpy="0 0 0"/>
         <axis xyz="0 0 1"/>
         <limit lower="-3.1415" upper="3.1415" effort="0" velocity="2.9671"/>
     </joint>
     <joint name="${prefix}joint_2" type="revolute">
       <parent link="${prefix}link_1"/>
       <child link="${prefix}link_2"/>
-      <origin xyz="0.320 0 0" rpy="0 0 0"/>
+      <origin xyz="-0.1 0 0.13" rpy="0 0 0"/>
       <axis xyz="0 1 0"/>
       <limit lower="-1.5707" upper="2.7052" effort="0" velocity="2.4434"/>
     </joint>
     <joint name="${prefix}joint_3" type="revolute">
       <parent link="${prefix}link_2"/>
       <child link="${prefix}link_3"/>
-      <origin xyz="0 0 0.870" rpy="0 0 0"/>
+      <origin xyz="0 0 1" rpy="0 0 0"/>
       <axis xyz="0 -1 0"/>
       <limit lower="-3.1415" upper="3.1415" effort="0" velocity="2.7925"/>
     </joint>
     <joint name="${prefix}joint_4" type="revolute">
       <parent link="${prefix}link_3"/>
       <child link="${prefix}link_4"/>
-      <origin xyz="0 0 0.225" rpy="0 0 0"/>
+      <origin xyz="0.46 0 0.26" rpy="0 0 0"/>
       <axis xyz="-1 0 0"/>
       <limit lower="-6.2831" upper="6.2831" effort="0" velocity="4.0142"/>
     </joint>
     <joint name="${prefix}joint_5" type="revolute">
       <parent link="${prefix}link_4"/>
       <child link="${prefix}link_5"/>
-      <origin xyz="1.015 0 0" rpy="0 0 0"/>
+      <origin xyz="0.5 0 0" rpy="0 0 0"/>
       <axis xyz="0 -1 0"/>
       <limit lower="-2.1816" upper="2.1816" effort="0" velocity="4.0142"/>
     </joint>
     <joint name="${prefix}joint_6" type="revolute">
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
-      <origin xyz="0.175 0 0" rpy="0 0 0"/>
+      <origin xyz="0.7 0 0.01" rpy="0 0 0"/>
       <axis xyz="-1 0 0"/>
       <limit lower="-6.2831" upper="6.2831" effort="0" velocity="6.1086"/>
     </joint>
@@ -151,10 +165,17 @@
     <!-- ROS base_link to Robot Manufacturer World Coordinates transform -->
     <link name="${prefix}base" />
     <joint name="${prefix}base_link-base" type="fixed">
-        <origin xyz="0 0 0.450" rpy="0 0 0"/>
+        <origin xyz="0.105 0 0.955" rpy="0 0 0"/>
         <parent link="${prefix}base_link"/>
         <child link="${prefix}base"/>
     </joint>
 
+    <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
+    <link name="${prefix}tool0" />
+    <joint name="${prefix}link_6-tool0" type="fixed">
+      <origin xyz="0 0 0" rpy="${pi} ${-pi/2.0} 0" />
+      <parent link="${prefix}link_6" />
+      <child link="${prefix}tool0" />
+    </joint>
   </xacro:macro>
 </robot>
