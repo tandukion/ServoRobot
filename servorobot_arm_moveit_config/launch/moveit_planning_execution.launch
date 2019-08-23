@@ -44,6 +44,13 @@
     <arg name="config" value="true"/>
   </include>
 
-  <include file="$(find servorobot_arm_moveit_config)/launch/default_warehouse_db.launch" />
+  <!-- By default, we do not start a database (it can be large) -->
+  <arg name="db" default="false" doc="Start the MoveIt database" />
+  <!-- Allow user to specify database location -->
+  <arg name="db_path" default="$(find servorobot_arm_moveit_config)/default_warehouse_mongo_db" doc="Path to database files" />
+
+  <include file="$(find servorobot_arm_moveit_config)/launch/default_warehouse_db.launch" if="$(arg db)">
+    <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
+  </include>
 
 </launch>

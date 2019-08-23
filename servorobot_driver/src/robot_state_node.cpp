@@ -16,7 +16,7 @@ int main(int argc, char** argv)
   rsi.init();
 
   //run the node
-  ris.run();
+  rsi.run();
 
   return 0;
 }
