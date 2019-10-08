@@ -11,19 +11,29 @@
   </group>
 
   <group ns="robot_interface_streaming_servorobotarm">
-    <group ns="yrc1000" >
-	    <include file="$(servorobot_support)/launch/robot_interface_streaming_servorobotarm.launch">
-		    <arg name="robot_ip"   value="$(arg ip_str)" />
-	    </include>
-    </group>
+    <include file="$(find servorobot_support)/launch/robot_interface_streaming_servorobotarm.launch">
+        <arg name="robot_ip"   value="$(arg ip_str)" />
+    </include>
   </group>
 
   <group ns="robot_state_visualize_servorobotarm">
-    <group ns="yrc1000" >
-	    <include file="$(find servorobot_support)/launch/robot_state_visualize_servorobotarm.launch">
-		    <arg name="robot_ip"   value="$(arg ip_str)" />
-	    </include>
-    </group>
+    <include file="$(find servorobot_support)/launch/robot_state_visualize_servorobotarm.launch">
+        <arg name="robot_ip"   value="$(arg ip_str)" />
+    </include>
   </group>
 
+  <!-- use bswap -->
+  <group ns="robot_interface_streaming_servorobotarm__">
+    <include file="$(find servorobot_support)/launch/robot_interface_streaming_servorobotarm.launch">
+        <arg name="robot_ip"   value="$(arg ip_str)" />
+        <arg name="use_bswap" value="true" />
+    </include>
+  </group>
+
+  <group ns="robot_state_visualize_servorobotarm__">
+    <include file="$(find servorobot_support)/launch/robot_state_visualize_servorobotarm.launch">
+        <arg name="robot_ip"   value="$(arg ip_str)" />
+        <arg name="use_bswap" value="true" />
+    </include>
+  </group>
 </launch>
